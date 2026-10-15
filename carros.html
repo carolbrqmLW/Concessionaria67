@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de carros</title>
+</head>
+<body>
+    <div id="geral">
+        <h1>Cadastro de Carros</h1>
+        <form action="carros.php" method="POST">
+
+            <div id="campo">
+                <label for="idcarro">Id Carro:</label>
+                <input type="number" placeholder="Digite o id do carro" id="txtidcarro" name="idcliente">
+            </div>
+
+            <div class="campo">
+                <label for="marca">Marca:</label>
+                <input type="text" placeholder="Digite a marca do veículo" id="txtmarca" name="marca">
+            </div>
+
+            <div class="campo">
+                <label for="anofabricacao">Ano:</label>
+                <input type="text" placeholder="Digite o ano de fabricação" id="txtanofabricacao" name="anofabricacao">
+            </div>
+
+            <div class="campo">
+                <label for="cor">Cor:</label>
+                <input type="text" placeholder="Digite a cor do veículo" id="txtcor" name="cor">
+            </div>
+
+            <div class="campo">
+                <label for="placa">Placa:</label>
+                <input type="text" placeholder="Digite a placa" id="txtplaca" name="placa">
+            </div>
+
+            <div class="campo">
+                <label for="telefone">Telefone:</label>
+                <input type="text" placeholder="Digite o telefone" id="txttelefone" name="telefone">
+            </div>
+
+
+            <input type="submit" name="submit" value="Cadastrar">
+
+        </form>
+
+    </div>
+</body>
+</html>

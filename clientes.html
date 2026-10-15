@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de clientes</title>
+</head>
+<body>
+    <div id="geral">
+        <h1>Cadastro de Clientes</h1>
+        <form action="clientes.php" method="POST">
+
+            <div id="campo">
+                <label for="idcliente">Id:</label>
+                <input type="number" placeholder="Digite o id do cliente" id="txtcliente" name="idcliente">
+            </div>
+
+            <div class="campo">
+                <label for="nome">Nome:</label>
+                <input type="text" placeholder="Digite o nome completo do cliente" id="txtnomecl" name="nome">
+            </div>
+
+            <div class="campo">
+                <label for="cpf">CPF:</label>
+                <input type="text" placeholder="Digite o nome da CPF" id="txtcpf" name="cpf">
+            </div>
+
+            <div class="campo">
+                <label for="email">E-mail:</label>
+                <input type="text" placeholder="Digite o e-mail" id="txtemail" name="email">
+            </div>
+
+            <div class="campo">
+                <label for="telefone">Telefone:</label>
+                <input type="text" placeholder="Digite o telefone" id="txttelefone" name="telefone">
+            </div>
+
+            <div class="campo">
+                <label for="cidade">Cidade:</label>
+            <select name="cidade" required>
+            <option value="" disabled selected>Selecione</option>
+            <option value="1">Duque de Caxias</option>
+            <option value="2">Nova Iguaçu</option>
+            <option value="3">Belford Roxo</option>
+            <option value="4">Seropédica</option>
+            <option value="5">Rio de Janeiro</option>
+            </select>
+            </div>
+
+
+            <input type="submit" name="submit" value="Cadastrar">
+
+        </form>
+
+    </div>
+</body>
+</html>
